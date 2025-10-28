@@ -137,4 +137,4 @@ class Boy:
         self.state_machine.draw()
 
     def fire_ball(self):
-        print("Fire Ball!")
+        print("Fire Ball!")         # 공 객체생성을 위해 Ball class 필요
