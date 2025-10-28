@@ -135,3 +135,6 @@ class Boy:
 
     def draw(self):
         self.state_machine.draw()
+
+    def fire_ball(self):
+        print("Fire Ball!")
