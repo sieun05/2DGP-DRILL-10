@@ -26,8 +26,11 @@ def reset_world():
 
     # 게임월드에 넣는 순서에따라 그려지는 순서가 다르다.
 
-    grass = Grass()
-    game_world.add_object(grass, 0)
+    grass1 = Grass()
+    game_world.add_object(grass1, 0)
+
+    grass2 = Grass()
+    game_world.add_object(grass2, 2)
 
     boy = Boy()
     game_world.add_object(boy, 1)
