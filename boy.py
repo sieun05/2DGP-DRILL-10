@@ -142,5 +142,5 @@ class Boy:
         print("Fire Ball!")         # 공 객체생성을 위해 Ball class 필요
 
         # 실제로 Ball 생성해주어야 한다
-        ball = Ball(self.x, self. y, self.face_dir*10) # 위치, 속도
+        ball = Ball(self.x, self. y, self.face_dir*5) # 위치, 속도
         game_world.add_object(ball)     #만든 객체를 game_world에 추가해야한다
