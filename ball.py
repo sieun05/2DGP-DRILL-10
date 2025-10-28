@@ -20,5 +20,5 @@ class Ball:
         self.x += self.velocity
 
         #화면을 벗어나면 객체를 제거해야한다
-        if self.x < 100 or self.x > 700:
+        if self.x < 0 or self.x > 800:
             game_world.remove_object(self)
