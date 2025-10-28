@@ -37,6 +37,8 @@ class Idle:
 
 
     def exit(self, e):
+        if space_down(e):
+            self.boy.fire_ball()        #idle상태에서 event가 space_down일때만 fire_ball호출
         pass
 
     def do(self):
@@ -88,6 +90,8 @@ class Run:
             self.boy.dir = self.boy.face_dir = -1
 
     def exit(self, e):
+        if space_down(e):
+            self.boy.fire_ball()        #idle상태에서 event가 space_down일때만 fire_ball호출
         pass
 
     def do(self):
