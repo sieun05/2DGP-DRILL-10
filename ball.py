@@ -17,7 +17,7 @@ class Ball:
         self.image.draw(self.x, self.y)
 
     def update(self):
-        self.x += self.velocity * 10
+        self.x += self.velocity
 
         #화면을 벗어나면 객체를 제거해야한다
         if self.x < 100 or self.x > 700:
