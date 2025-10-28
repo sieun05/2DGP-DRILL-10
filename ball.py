@@ -1,5 +1,8 @@
 from pico2d import load_image
 
+import game_world
+
+
 class Ball:
     image = None
 
@@ -15,3 +18,7 @@ class Ball:
 
     def update(self):
         self.x += self.velocity * 10
+
+        #화면을 벗어나면 객체를 제거해야한다
+        if self.x < 100 or self.x > 700:
+            game_world.remove_object(self)
