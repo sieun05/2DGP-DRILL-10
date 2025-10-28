@@ -1,6 +1,8 @@
 from pico2d import load_image, get_time
 from sdl2 import SDL_KEYDOWN, SDLK_SPACE, SDLK_RIGHT, SDL_KEYUP, SDLK_LEFT
 
+import game_world
+from ball import Ball
 from state_machine import StateMachine
 
 
@@ -138,3 +140,7 @@ class Boy:
 
     def fire_ball(self):
         print("Fire Ball!")         # 공 객체생성을 위해 Ball class 필요
+
+        # 실제로 Ball 생성해주어야 한다
+        ball = Ball(self.x, self. y, self.face_dir*10) # 위치, 속도
+        game_world.add_object(ball)     #만든 객체를 game_world에 추가해야한다
