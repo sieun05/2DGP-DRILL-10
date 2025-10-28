@@ -24,11 +24,13 @@ def handle_events():
 def reset_world():
     global boy
 
+    # 게임월드에 넣는 순서에따라 그려지는 순서가 다르다.
+
     grass = Grass()
-    game_world.add_object(grass)
+    game_world.add_object(grass, 0)
 
     boy = Boy()
-    game_world.add_object(boy)
+    game_world.add_object(boy, 1)
 
 
 def update_world():
